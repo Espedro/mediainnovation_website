@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s --max-time 8 \"https://api.rss2json.com/v1/api.json?rss_url=https://news.ycombinator.com/rss&count=3\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\);process.stdin.on\\('end',\\(\\)=>console.log\\(JSON.stringify\\(JSON.parse\\(d\\),null,2\\)\\)\\)\")",
+      "Bash(curl -s --max-time 8 \"https://api.rss2json.com/v1/api.json?rss_url=https://news.ycombinator.com/rss\")",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\);process.stdin.on\\('end',\\(\\)=>{const j=JSON.parse\\(d\\); console.log\\('status',j.status\\); console.log\\('items count', j.items.length\\); console.log\\(JSON.stringify\\(j.items[0],null,2\\)\\);}\\)\")",
+      "Bash(node -e \"require\\('@babel/core'\\)\")",
+      "Bash(npx vite *)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(chromium-cli --help)"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "feed": "node scripts/fetch-blog-feed.mjs",
+    "predev": "node scripts/fetch-blog-feed.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "prebuild": "node scripts/fetch-blog-feed.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^7.18.1",
+    "vite": "^5.4.11"
+  },
+  "devDependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
